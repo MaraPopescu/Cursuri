@@ -1,0 +1,13 @@
+.add-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  height: 250px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+}

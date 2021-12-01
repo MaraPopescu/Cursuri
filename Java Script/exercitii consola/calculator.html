@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator!</h1>
+    <input type="number" name="primul numar" id="input1" />
+    <input type="number" name="al doilea numar" id="input2" />
+    <button type="button" onclick="afisare()">Afisarea numerelor</button>
+    <button type="button" onclick="suma()">Suma numerelor</button>
+    <button type="button" id="button_add">Adauga numere</button>
+    <button type="button" id="scadere">Scadere numere</button>
+
+    <script>
+      console.log("Hello! Prima linie de codok!");
+      const a = document.getElementById("input1");
+      const b = document.getElementById("input2");
+      const button1 = document.getElementById("button_add");
+      const button2 = document.getElementById("scadere");
+      console.log("Elemente din HTML: ", a, b);
+
+      function afisare() {
+        console.log("numerele sunt ", a.value, b.value);
+        console.log("Tip valori", typeof a.value, typeof b.value);
+        const numberOne = parseInt(a.value);
+        const numberTwo = parseInt(b.value);
+
+        console.log("numere", numberOne, numberTwo);
+        console.log("Tip valori", typeof numberOne, typeof numberTwo);
+      }
+      /*parseInt este pt numere intregi, parseFloat le scoate cu virgula => zecimale/
+
+      function suma() {
+        console.log(
+          "suma numerelor este: ",
+          parseInt(a.value) + parseInt(b.value)
+        );
+      }
+
+      function globalFunction(functiaCareVaFiApelata) {
+        const m = 5;
+        functiaCareVaFiApelata(m);
+      }
+
+      function addZero(number) {
+        console.log("numar * 10:", number * 10);
+      }
+      globalFunction(addZero);
+      function addFive(number) {
+        console.log("numar +5:", number + 5);
+      }
+      globalFunction(addFive);
+
+      function ruleazaDupaDouaSecunde() {
+        console.log("A rulat!");
+      }
+
+      setTimeout(ruleazaDupaDouaSecunde, 2000); */
+
+      button1.addEventListener("click", function () {
+        const numberOne = parseInt(a.value);
+        const numberTwo = parseInt(b.value);
+        console.log("Suma: ", numberOne + numberTwo);
+      });
+      button2.addEventListener("click", function () {
+        const numberOne = parseInt(a.value);
+        const numberTwo = parseInt(b.value);
+        console.log("Diferena: ", numberOne - numberTwo);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./ex3.css" />
+  </head>
+  <body>
+    <input type="number" placeholder="numar" id="input" />
+    <button type="button" onclick="compar()">Compar</button>
+    <h2 id="rezultat"></h2>
+    <script>
+      function compar() {
+        const x = Math.random() * 1000;
+        const y = document.getElementById("input").value;
+        console.log(x, y);
+        if (x > y) {
+          document.getElementById("rezultat").innerHTML =
+            "numarul meu este mai mic";
+        } else {
+          {
+            document.getElementById("rezultat").innerHTML =
+              "numarul meu este mai mare";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

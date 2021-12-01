@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pag cu JS</title>
+  </head>
+  <body>
+    <h1 id="title">Hello JS</h1>
+    <p id="paragraf">Acest paragraf contine o descriere lunga</p>
+    <button type="button" onclick="apasaButon()">Click me!</button>
+    <button type="button" onclick="modificaParagraf()">
+      Modifica paragraf!!!
+    </button>
+    <p id="paragraf2" onclick="schimbparagraf()">Lorem ipsum</p>
+    <script>
+      let element = document.getElementById("title");
+      console.log(element);
+      element.innerText = "hello world";
+      element.style.fontSize = "35px";
+      element.style.color = "red";
+
+      let paragraf = document.getElementById("paragraf");
+
+      let switchColor = false;
+
+      function schimbparagraf() {
+        let altparagraf = document.getElementById("paragraf2");
+        paragraf2.style.color = "green";
+        paragraf2.style.fontSize = "43px";
+        if (switchColor === false) {
+          paragraf2.style.color = "yellow";
+          switchColor = true;
+        } else {
+          paragraf2.style.color = "purple";
+          switchColor = false;
+        }
+      }
+
+      function apasaButon() {
+        element.style.color = "blue";
+        element.innerText = "Buton apasat!!!";
+      }
+      function modificaParagraf() {
+        paragraf.innerText = "Am modificat acest paragraf!!!";
+      }
+    </script>
+  </body>
+</html>

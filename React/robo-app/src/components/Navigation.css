@@ -1,0 +1,14 @@
+.navigation-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(75, 73, 73);
+  color: white;
+  height: 5vh;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}

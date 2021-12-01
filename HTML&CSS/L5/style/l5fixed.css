@@ -1,0 +1,14 @@
+body {
+  width: 500px;
+  height: 2500px;
+  margin: 0 auto;
+  background-color: bisque;
+}
+
+h1 {
+  background-color: blue;
+  position: fixed;
+  color: white;
+  left: 0;
+  top: 0;
+}

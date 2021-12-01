@@ -1,0 +1,15 @@
+.react-list-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100vh;
+  overflow: auto;
+  margin-right: 200px;
+  background-color: rgb(172, 173, 169);
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.react-view-container {
+  position: fixed;
+  background-color: rgb(179, 214, 182);
+}

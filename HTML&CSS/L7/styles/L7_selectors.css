@@ -1,0 +1,10 @@
+p:first-child i {
+  background-color: yellow;
+}
+p:first-child {
+  color: violet;
+}
+
+p:last-child i {
+  background-color: teal;
+}

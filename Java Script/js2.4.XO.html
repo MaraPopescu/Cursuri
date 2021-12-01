@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>X si 0</title>
+    <link rel="stylesheet" href="./js.2.4.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="cell_00" class="cell" onclick="changeCell(0,0)"></div>
+      <div id="cell_01" class="cell" onclick="changeCell(0,1)"></div>
+      <div id="cell_02" class="cell" onclick="changeCell(0,2)"></div>
+      <div id="cell_10" class="cell" onclick="changeCell(1,0)"></div>
+      <div id="cell_11" class="cell" onclick="changeCell(1,1)"></div>
+      <div id="cell_12" class="cell" onclick="changeCell(1,2)"></div>
+      <div id="cell_20" class="cell" onclick="changeCell(2,0)"></div>
+      <div id="cell_21" class="cell" onclick="changeCell(2,1)"></div>
+      <div id="cell_22" class="cell" onclick="changeCell(2,2)"></div>
+    </div>
+    <h1 id="next_player"></h1>
+    <button type="button" onclick="reset ()">Reseteaza jocul!</button>
+
+    <script>
+      let player = false;
+      let next_player = document.getElementById("next_player");
+      const textJucator1 = "Este randul primului jucator";
+      const textJucator2 = "Este randul celui de-al doilea jucator";
+      next_player.innerText = textJucator1;
+
+      const XOmatrix = [
+        ["", "", ""],
+        ["", "", ""],
+        ["", "", ""],
+      ];
+
+            function isWinner() {
+          let isEmptySpace = false;
+          XOmatrix.forEach((rand, indexRand) => {
+            rand.forEach((celula, indexCelula) => {
+              if (celula === "") {
+                isEmptySpace = true;
+              }
+            });
+          });
+
+          if (
+            xoMatrix[0][0] === "O" &&
+            xoMatrix[0][1] === "O" &&
+            xoMatrix[0][2] === "O"
+          ) {
+            alert("Playerul cu O a castigat");
+          }
+
+          if (
+            xoMatrix[0][0] === "X" &&
+            xoMatrix[0][1] === "X" &&
+            xoMatrix[0][2] === "X"
+          ) {
+            alert("Playerul cu O a castigat");
+          }
+          if (!isEmptySpace) {
+            alert("Jocul nu mai poate continua");
+          }
+        }
+      }
+
+      function changeCell(rand, coloana) {
+        let cell = document.getElementById("cell_" + rand + coloana);
+        console.log(cell.innerText);
+
+        /*if (cell.innerText !== "")*/
+        if (cell.innerText <= 0) {
+          if (player === false) {
+            cell.innerText = "X";
+            XOmatrix[rand][coloana] = "X";
+            player = true;
+            next_player.innerText = textJucator2;
+            cell.classList.add ("X_cell");
+          } else {
+            cell.innerText = "O";
+            XOmatrix[rand][coloana] = "O";
+            player = false;
+            next_player.innerText = textJucator1;
+                        cell.classList.add ("X_cell");
+
+          }
+        }
+        isWinner();
+        console.log(XOmatrix);
+      }
+      function reset() {
+        XOmatrix.forEach((rand, indexRand) => {
+          rand.forEach((celula, indexCelula) => {
+            let elementCell = document.getElementById(
+              "cell_" + indexRand + indexCelula
+            );
+            elementCell.innerText = "";
+            XOmatrix[indexRand][indexCelula] = "";
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

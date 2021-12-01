@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+
+  margin: auto;
+
+  background-color: rgb(122, 175, 221);
+}

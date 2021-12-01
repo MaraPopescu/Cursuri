@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercitiu2</title>
+  </head>
+  <body>
+    <h1 id="counter">Numarul</h1>
+    <button type="button" onclick="minus()">-</button>
+    <button type="button" onclick="add()">+</button>
+    <button type="button" onclick="reset()">Reseteaza counter!</button>
+    <script>
+      let counterElement = document.getElementById("counter");
+      let counterNumber = 0;
+      counterElement.innerText = counterNumber;
+
+      function add() {
+        counterNumber = counterNumber + 1;
+        counterElement.innerText = counterNumber;
+      }
+      function minus() {
+        counterNumber = counterNumber - 1;
+        counterElement.innerText = counterNumber;
+      }
+      function reset() {
+        counterNumber = 0;
+        counterElement.innerText = counterNumber;
+      }
+    </script>
+  </body>
+</html>

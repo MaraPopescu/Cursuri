@@ -1,0 +1,27 @@
+.animation {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  background-color: black;
+  transition: transform 2s, width 2s;
+  transition-timing-function: ease-in;
+}
+
+.animation:hover {
+  /*transform: translate(100px, 100px);*/
+  /* transform: scale(2, 3); */
+  width: 400px;
+  /* transform: rotate(45deg); */
+}
+
+.animation-timing-1 {
+  transition-timing-function: liniar;
+}
+
+.animation-timing-2 {
+  transition-timing-function: ease-in;
+}
+
+.animation-timing-3 {
+  transition-timing-function: ease-in-out;
+}

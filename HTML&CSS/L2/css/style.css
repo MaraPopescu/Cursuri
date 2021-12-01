@@ -1,0 +1,33 @@
+table {
+  border: 1px solid black;
+}
+.td_style {
+  background-color: red;
+  display: ;
+}
+#td_style_ID {
+  background-color: rgba(233, 122, 133, 1);
+}
+/* Elementele dintre semnele astea nu se vad; */
+p {
+  color: pink;
+}
+
+.p_class {
+  font-size: 30px;
+}
+
+.paragraf_rosii {
+  text-indent: 30px;
+  font-family: lucida sans unicode;
+  font-weight: bold;
+}
+
+.paragraf_albastru {
+  color: blue;
+  text-indent: 100px;
+  font-style: italic;
+}
+input {
+  display: block;
+}

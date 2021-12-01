@@ -1,0 +1,141 @@
+.card {
+  background-color: #2a292e;
+  border-radius: 3rem;
+  margin: 1rem;
+  margin-bottom: 4rem;
+}
+.card_header {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.more_info svg {
+  color: #c5c4c8;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+.persona {
+  display: flex;
+  align-items: center;
+}
+.persona img {
+  margin-right: 2rem;
+  border-radius: 3rem;
+  height: 4rem;
+  width: 4 rem;
+}
+
+.persona_text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.normal_text {
+  color: white;
+  line-height: 1.1;
+  font-size: 1.8rem;
+}
+.small_text {
+  color: #c5c4c8;
+  font-size: 1.4rem;
+}
+p {
+  margin: 0;
+}
+.card_body img {
+  max-height: 30vh;
+  width: 100%;
+  object-fit: contain;
+}
+
+.card_body {
+  margin: 0;
+}
+
+.action_bar {
+  width: 100%;
+  background-color: #18181c;
+  display: flex;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+.action_bar div {
+  color: #c5c4c8;
+}
+.action_bar div::after {
+  content: "⦿";
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+.comment_section {
+  display: flex;
+  flex-direction: column;
+}
+.my_comment {
+  display: flex;
+  margin-top: 0.5rem;
+  align-content: center;
+  align-items: center;
+}
+.my_comment img {
+  width: 3rem;
+  height: 3 rem;
+  border-radius: 3rem;
+  object-fit: cover;
+  margin-left: 1rem;
+}
+.my_comment input {
+  background-color: #444348;
+  color: white;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 2rem;
+  flex: 1;
+  outline: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.other_comments {
+  width: 100%;
+  color: white;
+  margin-top: 2rem;
+}
+.comment_persona {
+  display: flex;
+}
+.comment_persona img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+}
+.comment_persona .persona_text {
+  margin-left: 2rem;
+}
+.other_comments > .small_text {
+  margin-left: 5rem;
+}
+.last_part {
+  display: flex;
+  justify-content: space-around;
+  background-color: #444348;
+  border-radius: 3rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  color: #c5c4c8;
+}
+.like_button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.comment_button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

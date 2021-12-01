@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form page</title>
+    <link rel="stylesheet" href="./js3.form_validation.css" />
+  </head>
+  <body>
+    <form>
+      <input type="email" name="email" />
+      <p id="email"></p>
+      <input type="password" name="password" />
+      <p id="hint">Parola trb sa contina min 8 caractere, un nr, un simbol</p>
+      <p id="password"></p>
+      <input type="text" name="description" />
+      <p id="description"></p>
+    </form>
+    <button type="button" onclick="verificareFormular()">
+      Verificare formular
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.6.0/validator.min.js"></script>
+    <script>
+      function setInputValidation(name, state) {
+        let elementP = document.getElementById(name);
+        if (state === "succes") {
+          elementP.innerText = "Succes!";
+          elementP.classList.add("stare_succes");
+        } else if (state === "error") {
+          elementP.innerText = "Campul " + name + " nu este introdus corect";
+          elementP.classList.add("stare_succes");
+        }
+      }
+
+      console.log("Javascript!");
+      function verificareFormular() {
+        const formData = new FormData(document.querySelector("form"));
+        let formularValid = true;
+
+        for (let pair of formData.entries()) {
+          const regex = /\D{4,}\@\D{4,}\.\D{2,}/g;
+          const valoare_input = pair[1];
+          if (pair[0] === "email") {
+            if (valoare_input.match(regex)) {
+              setInputValidation(pair[0], "succes");
+              /*pair este un array care are doua valori: prima este numele din input, a
+    doua este valoarea introdusa efectiv in pagina web ["email",
+    "maaa@yahoo.com"] => pair[0] = email, pair[1] = mmm@yahoo.com */
+            } else {
+              setInputValidation(pair[0], "error");
+              formularValid = false;
+            }
+          }
+          if (pair[0] === "password") {
+            console.log(validator.isStrongPassword(valoare_input));
+            if (validator.isStrongPassword(valoare_input)) {
+              setInputValidation(pair[0], "succes");
+            } else {
+              setInputValidation(pair[0], "error");
+              formularValid = false;
+            }
+          }
+          if (pair[0] === "description") {
+            if (validator.isLength(valoare_input, { min: 10, max: 100 })) {
+              setInputValidation(pair[0], "succes");
+            } else {
+              setInputValidation(pair[0], "error");
+              formularValid = false;
+            }
+          }
+        }
+        console.log("Intreg formular:", formularValid);
+      }
+    </script>
+  </body>
+</html>

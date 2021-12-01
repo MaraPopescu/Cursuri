@@ -1,0 +1,17 @@
+.main_relative {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  background-color: bisque;
+  top: 200px;
+  left: 200px;
+}
+
+.main_absolute {
+  background-color: blue;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50px;
+  left: 50px;
+}

@@ -1,0 +1,29 @@
+body {
+  width: 500px;
+  height: 2500px;
+  margin: 0 auto;
+}
+
+h2 {
+  background-color: black;
+  position: sticky;
+  color: white;
+}
+
+.zindex_first {
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+
+.zindex_second {
+  z-index: 2;
+  top: 28px;
+  left: 0;
+}
+
+.zindex_third {
+  z-index: 1;
+  top: 56px;
+  left: 0;
+}

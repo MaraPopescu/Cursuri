@@ -1,0 +1,8 @@
+.card_fruct {
+  padding: 20px;
+  background-color: rgb(171, 112, 226);
+  color: cornsilk;
+  border: 3px solid rgb(61, 83, 24);
+  border-radius: 5px;
+  margin: 20px;
+}

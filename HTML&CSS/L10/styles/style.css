@@ -1,0 +1,24 @@
+.col_colored {
+  background-color: rgb(173, 233, 173);
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col_red {
+  background-color: red;
+  color: white;
+  border: 2px solid black;
+}
+
+.row {
+  color: black;
+}
+.col_blu {
+  background-color: blue;
+}
+
+.button-css {
+  background-color: blueviolet;
+  border: 5px solid black;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      function compar(numar) {
+        const x = Math.random() * 1000;
+        console.log(x);
+        if (numar < x) {
+          console.log("ai castigat");
+        } else {
+          console.log("ai pierdut");
+        }
+      }
+      compar(3);
+      function la100() {
+        console.log("s-a apelat la 100");
+        Math.floor(Math.random() * 100);
+      }
+      function la1000() {
+        console.log("s-a apelat la 100");
+        Math.floor(Math.random() * 1000);
+      }
+      function compar2(numar, generatorNumar) {
+        const randomNumber = generatorNumar();
+        console.log(randomNumber);
+        if (numar < randomNumber) {
+          console.log("ai castigat");
+        } else {
+          console.log("ai pierdut");
+        }
+      }
+      compar2(4, la100);
+      compar2(6, la1000);
+
+      const fructe = ["mere", "pere", "banane"];
+      function inForEach(valoare, index) {
+        console.log("valoare si index", valoare, index);
+      }
+      fructe.forEach(inForEach);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+.parinte {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  height: 300px;
+  width: 900px;
+  background-color: rgb(135, 143, 250);
+}
+
+.copil {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+}
+
+.copil_diferit {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  order: -1;
+}

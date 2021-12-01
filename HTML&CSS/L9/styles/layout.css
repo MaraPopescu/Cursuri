@@ -1,0 +1,19 @@
+html {
+  font-size: 10px;
+}
+
+.header {
+  height: 10vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.margin-header {
+  margin-top: 10vh;
+}
+body {
+  background-color: #18181c;
+}

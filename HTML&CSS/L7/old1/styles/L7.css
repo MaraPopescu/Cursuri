@@ -1,0 +1,13 @@
+.border_color {
+  border: 2px solid red;
+  border-radius: 75px;
+}
+
+.text_color {
+  font-size: 30px;
+  color: brown;
+}
+
+.text_color .h1_class {
+  color: yellow;
+}

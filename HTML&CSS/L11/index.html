@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/post.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrit
+      y="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      c
+      rossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <div class="header background_black">
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div class="col-4">
+            <div class="search_group">
+              <img
+                src="https://icons-for-free.com/iconfiles/png/512/color+facebook+icon-1320168272811213233.png"
+                alt="facebook logo"
+                class="logo"
+              />
+              <div class="search_container">
+                <i data-feather="search" class="search_icon"></i>
+                <input type="text" placeholder="Search..." class="search" />
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="head_links_group">
+              <div class="head_icon_link"><i data-feather="home"></i></div>
+              <div class="head_icon_link"><i data-feather="youtube"></i></div>
+              <div class="head_icon_link"><i data-feather="bookmark"></i></div>
+              <div class="head_icon_link"><i data-feather="users"></i></div>
+              <div class="head_icon_link"><i data-feather="grid"></i></div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="account_group">
+              <div class="account_logo">
+                <img src="https://picsum.photos/200" alt="Account image" />M
+              </div>
+              <div class="account_action_group">
+                <div class="account_icon"><i data-feather="plus"></i></div>
+                <div class="account_icon">
+                  <i data-feather="message-circle"></i>
+                </div>
+                <div class="account_icon"><i data-feather="bell"></i></div>
+                <div class="account_icon">
+                  <i data-feather="chevron-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid margin-header">
+      <div class="row">
+        <div class="col-4">Links</div>
+        <div class="col-4">
+          <div class="card">
+            <div class="card_header">
+              <div class="persona">
+                <img src="https://picsum.photos/200" alt="Imagine persoana" />
+                <div class="persona_text">
+                  <p class="normal_text">Mara Popescu</p>
+                  <p class="small_text">5 h ago</p>
+                </div>
+              </div>
+              <div class="more_info">
+                <i data-feather="more-horizontal"></i>
+              </div>
+            </div>
+            <div class="card_body">
+              <p class="normal_text mb-4">
+                The standard Lorem Ipsum passage, used since the 1500s "Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+              <img
+                src="https://picsum.photos/seed/description_1/700"
+                alt="descriere postare"
+              />
+            </div>
+            <div class="card_footer">
+              <div class="action_bar">
+                <div>Like</div>
+                <div>Comment</div>
+                <div>Subscribe</div>
+              </div>
+              <div class="comment_section">
+                <div class="my_comment">
+                  <img
+                    src="https://picsum.photos/seed/description_1/300"
+                    alt="my image"
+                  />
+                  <input type="text" placeholder="Write your comment" />
+                </div>
+                <div class="other_comments">
+                  <div class="comment_persona">
+                    <img
+                      src="https://picsum.photos/200"
+                      alt="Imagine persoana"
+                    />
+                    <div class="persona_text">
+                      <p class="normal_text">Mara Popescu</p>
+                      <p class="small_text">5h ago.</p>
+                      <p class="small_text">
+                        The standard Lorem Ipsum passage, used since the 1500s
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum."
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="last_part">
+                  <div class="like_button">
+                    <i data-feather="thumbs-up"></i>
+                    <p>Like</p>
+                  </div>
+                  <div class="comment_button">
+                    <i data-feather="message-square"></i>
+                    <p>Comment</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_header">
+              <div class="persona">
+                <img src="https://picsum.photos/200" alt="Imagine persoana" />
+                <div class="persona_text">
+                  <p class="normal_text">Mara Popescu</p>
+                  <p class="small_text">5 h ago</p>
+                </div>
+              </div>
+              <div class="more_info">
+                <i data-feather="more-horizontal"></i>
+              </div>
+            </div>
+            <div class="card_body">
+              <p class="normal_text mb-4">
+                The standard Lorem Ipsum passage, used since the 1500s "Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+              <img
+                src="https://picsum.photos/seed/description_1/700"
+                alt="descriere postare"
+              />
+            </div>
+            <div class="card_footer">
+              <div class="action_bar">
+                <div>Like</div>
+                <div>Comment</div>
+                <div>Subscribe</div>
+              </div>
+              <div class="comment_section">
+                <div class="my_comment">
+                  <img
+                    src="https://picsum.photos/seed/description_1/300"
+                    alt="my image"
+                  />
+                  <input type="text" placeholder="Write your comment" />
+                </div>
+                <div class="other_comments">
+                  <div class="comment_persona">
+                    <img
+                      src="https://picsum.photos/200"
+                      alt="Imagine persoana"
+                    />
+                    <div class="persona_text">
+                      <p class="normal_text">Mara Popescu</p>
+                      <p class="small_text">5h ago.</p>
+                      <p class="small_text">
+                        The standard Lorem Ipsum passage, used since the 1500s
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum."
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="last_part">
+                  <div class="like_button">
+                    <i data-feather="thumbs-up"></i>
+                    <p>Like</p>
+                  </div>
+                  <div class="comment_button">
+                    <i data-feather="message-square"></i>
+                    <p>Comment</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">Chat</div>
+      </div>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

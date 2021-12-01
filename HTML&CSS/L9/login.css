@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+p {
+  color: royalblue;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+form {
+  margin-top: 24px;
+  margin-left: 24px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+input {
+  width: fit-content;
+}
+.button {
+  background-color: rgb(220, 242, 250);
+  color: royalblue;
+  border: 3px solid royalblue;
+  margin-top: 24px;
+  margin-left: 24px;
+  font-size: 12px;
+}

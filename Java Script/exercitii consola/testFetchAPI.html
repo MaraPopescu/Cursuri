@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      let inProgress = true;
+      fetch("https://jsonplaceholder.typicode.com/users", { method: "get" })
+        .then((response) => response.json())
+        .then((utilizatori) => {
+          console.log(utilizatori);
+          inProgress = false;
+        });
+      const utilizator = {
+        email: "eve.holt@reqres.in",
+        password: "pistol",
+      };
+      fetch("https://reqres.in/api/register", {
+        method: "post",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(utilizator),
+      })
+        .then((response) => response.json())
+        .then((utilizatorInregistrat) => {
+          console.log("NOUL UTILIZATOR", utilizatorInregistrat);
+        });
+    </script>
+  </body>
+</html>

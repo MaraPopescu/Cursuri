@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head lang="RO-ro">
+    <meta charset="UTF-8" />
+    <title>My first HTML Page</title>
+  </head>
+  <body>
+    <h1>My first page with JavaScript</h1>
+
+    <script type="text/javascript">
+      const orase = [
+        { nume: "Timisoara", temperatura: 39 },
+        { nume: "Cluj", temperatura: 36, esteAfara: true },
+        { nume: "Constanta", temperatura: 29 },
+        { nume: "Sinaia", temperatura: 24 },
+      ];
+
+      const oraseStraine = [
+        { nume: "Berlin", temperatura: 21, esteAfara: true },
+        { nume: "Roma", temperatura: 30 },
+        { nume: "Londra", temperatura: 25, esteAfara: true },
+        { nume: "Praga", temperatura: 20 },
+      ];
+
+      function esteAfara(parametru) {
+        if (parametru === true) {
+          return "afara";
+        } else {
+          return "in casa";
+        }
+      }
+
+      orase.forEach((oras) => {
+        if (oras.temperatura > 30) {
+          /*if (oras.esteAfara === true) {
+            console.log("Este cald", oras.nume, "afara");
+          } else {
+            console.log("Este cald", oras.nume, "in casa");
+          }*/
+          console.log("Este cald", oras.nume, esteAfara(oras.esteAfara));
+        } else {
+          /*if (oras.esteAfara === true) {
+            console.log("temperatura este in", oras.nume, "afara");
+          } else {
+            console.log("temperatura este in", oras.nume, "in casa");
+          }*/
+          console.log(
+            "Temperatura este de",
+            oras.temperatura,
+            "in",
+            oras.nume,
+            esteAfara(oras.esteAfara)
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

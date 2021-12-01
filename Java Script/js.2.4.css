@@ -1,0 +1,35 @@
+body {
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+}
+#container {
+  height: 600px;
+  width: 600px;
+  background-color: antiquewhite;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+  font-size: 100px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.X_cell {
+  background-color: blueviolet;
+  color: azure;
+}
+
+.O_cell {
+  background-color: pink;
+  color: blue;
+}

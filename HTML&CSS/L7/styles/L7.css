@@ -1,0 +1,21 @@
+.border_color {
+  border: 2px solid red;
+  border-radius: 75px;
+}
+
+.text_color {
+  font-size: 30px;
+  color: brown;
+}
+
+div .h1_class {
+  color: yellow;
+}
+
+.toate_elementele * {
+  background-color: teal;
+}
+
+.acest_div div div {
+  background-color: blue;
+}

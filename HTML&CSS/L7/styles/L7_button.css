@@ -1,0 +1,39 @@
+.center_all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.button {
+  color: white;
+  background-color: violet;
+  border-radius: 75px;
+  padding: 20px;
+  cursor: pointer; /*schimba cursorul in manuta cand ma duc pe buton*/
+}
+
+.button::after {
+  content: "->";
+  background-color: teal;
+}
+
+.button::before {
+  content: "* ";
+  background-color: red;
+}
+
+.button:hover {
+  /*schimba culoarea butonului cand pozitionez cursoul pe el*/
+  border: 2px solid crimson;
+  background-color: white;
+  color: black;
+}
+
+.button:active {
+  /*schimba culoarea butonului cand dau click*/
+  background-color: royalblue;
+}
+
+/*hover trb asezat inainte de active pt a se aplica toate starile*/

@@ -1,0 +1,22 @@
+.order {
+  display: flex;
+  flex-direction: row;
+  .
+}
+
+ul:first-child li:last-child{
+    background-color: turquoise; 
+    }
+
+
+li:nth-child(even) {
+    background-color: yellowgreen;
+}
+
+li:nth-child(odd) {
+    background-color: red;
+} 
+
+li:nth-child(2) {
+    color: white;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pagina cu imagine</title>
+  </head>
+  <body>
+    <img
+      id="ideea"
+      src="https://www.w3schools.com/js/pic_bulboff.gif"
+      style="width: 150px"
+      onclick="schimbImg()"
+    />
+    <script>
+      let imagine = document.getElementById("ideea");
+      let swithBec = false;
+      function schimbImg() {
+        if (swithBec === false) {
+          imagine.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+          swithBec = true;
+        } else {
+          imagine.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+          swithBec = false;
+        }
+      }
+    </script>
+  </body>
+</html>
